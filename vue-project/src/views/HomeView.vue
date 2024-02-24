@@ -61,7 +61,7 @@ export default {
       </div>
 
       <div class="md:w-4/5 md:h-full bg-red-700 flex flex-wrap justify-center items-center h-full w-full">
-      <div class="w-4/5 h-4/5  flex flex-wrap xl:flex-nowrap sm:gap-2">
+      <div class="sm:w-4/5 sm:h-4/5 w-full h-full flex flex-wrap xl:flex-nowrap sm:gap-2">
           <div class="my-img bg-gray-400 xl:w-1/3 xl:h-full sm:w-full sm:h-1/2 h-1/3 w-full"></div>
           <div class="my-img bg-teal-500 xl:w-1/3 xl:h-full sm:h-1/2 sm:w-1/2 sm:flex-1 h-1/3 w-full"></div>
           <div class="my-img bg-indigo-600 xl:w-1/3 xl:h-full sm:h-1/2 sm:w-1/2 sm:flex-1 h-1/3 w-full"></div>
