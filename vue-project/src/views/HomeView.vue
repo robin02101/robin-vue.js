@@ -1,3 +1,6 @@
+<script setup>
+</script>
+
 <script>
 export default {
   data() {
@@ -25,25 +28,20 @@ export default {
         <div class="absolute inset-y-0 right-2  flex items-center sm:hidden">
        
         <button type="button"  class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-800 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" @click="toggleMobileMenu" aria-controls="mobile-menu" aria-expanded="false">
-          <span class="absolute -inset-0.5"></span> 
-          <span class="sr-only">Open main menu</span>
+         
        
           <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
-         
-          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
         </button>
       </div>
       
-      <div :class="{ 'block': isMobileMenuOpen, 'hidden': !isMobileMenuOpen }" class="sm:hidden mt-52 bg-gray-700" id="mobile-menu">
+      <div :class="{ 'hidden': !isMobileMenuOpen }" class="sm:hidden mt-52 bg-gray-700" id="mobile-menu">
   <div class="space-y-1 px-2 pb-3 pt-2">
   
-    <a href="www.youtube.com" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Youtube</a>
-    <a href="www.google.com" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Google</a>
-    <a href="https://tw.yahoo.com/" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Yahoo</a>
+    <a href="https://www.youtube.com" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Youtube</a>
+    <a href="https://www.google.com" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Google</a>
+    <a href="https://tw.yahoo.com/" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Yahoo</a>
   </div>
 </div>
         
@@ -56,9 +54,9 @@ export default {
         
       
         <div class="all-a sm:flex md:flex-col hidden">
-        <div class="a bg-yellow-700 w-16 h-8 md:mt-8 "><a href="www.youtube.com">Youtube</a></div>
-        <div class="a bg-yellow-700 w-16 h-8 md:mt-8"><a href="www.google.com">Google</a></div>
-        <div class="a bg-yellow-700 w-16 h-8 md:mt-8 mr-2 md:mr-0"><a href="https://tw.yahoo.com/">Yahoo</a></div>
+        <div class="a bg-yellow-700 w-16 h-8 md:mt-8 "><a href="https://www.youtube.com" target="_blank">Youtube</a></div>
+        <div class="a bg-yellow-700 w-16 h-8 md:mt-8"><a href="https://www.google.com" target="_blank">Google</a></div>
+        <div class="a bg-yellow-700 w-16 h-8 md:mt-8 mr-2 md:mr-0"><a href="https://tw.yahoo.com/" target="_blank">Yahoo</a></div>
       </div>
       </div>
 
